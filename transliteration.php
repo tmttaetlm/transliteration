@@ -174,7 +174,7 @@ function exportCSV($params) {
         header('Content-Disposition: attachment; filename="Translit-output.csv";');
 
         $output = fopen("php://output", "w+");
-        foreach ($list as $line) { fputcsv($output, $line); }
+        foreach ($list as $line) { fputs($output, implode(',', $line)."\n"); }
         fclose($output);
         
         ob_flush(); ob_end_clean();
