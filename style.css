@@ -1,0 +1,258 @@
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, p, th, td {
+    margin: 0;
+    padding: 0;
+}
+article, aside, footer, header, main, nav, section {
+    display: block;
+}
+body {
+    font: 16px Roboto;
+    line-height: 1.2;
+    letter-spacing: normal;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+header {
+    height: 60px;
+    background: #5e852c;
+}
+footer {
+    height: 60px;
+    margin-top: 20px;
+    background: #f5f5f4;
+}
+section {
+    min-height: calc(100vh - 140px);
+}
+form {
+    width: 0;
+    height: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td {
+    background-color: white;
+    padding: 2px 5px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+table caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+a {
+    color: rgb(25, 35, 175);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+select {
+    width: 180px;
+    height: 30px;  
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAfklEQVRYhe2OwQ1AQBQF57IHF6sMDWhAMbpTB7rRAZcv2YiwYm1C3iT/9l9mQAghhPgADuiA+samto1LEdACCzADTcR/Y7+LbR9TAENkRCgfbJsED4wXEXt5mUoeE7GX+9Tys4hQPr4pDyOmICKr/Cgiu3yjAnq77HIhhPgPK6ORKG1HF94WAAAAAElFTkSuQmCC) no-repeat right #fff;
+    font-size: 16px;
+}
+
+code {
+    background-color: rgb(200, 200, 200);
+    border: 1px solid rgb(120, 130, 40);
+    border-radius: 3px;
+    padding: 1px 5px;
+    margin: 3px 0;
+}
+
+p {
+    line-height: 1.3em;
+}
+button {
+    height: 35px;
+    color: #ffffff;
+    background-color: #5e852c;
+    padding: 5px 30px;
+    margin: 10px 5px 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: .25s ease-in-out;
+}
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 60px;
+    width: 120px;
+    float: left;
+}
+.logo h1 a {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+.logo h2 a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+.title h1 a {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    float: left;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #5e852c;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#fio {
+    float: left;
+    width: 46%;
+}
+#res {
+    float: right;
+    width: 46%;
+}
+
+.standart {
+    position: static;
+    top: 0;
+    left: 0;
+    min-height: 200px;
+    padding: 15px;
+    margin-top: 25px;
+    background-color: #ecf0f1;
+    border-top: 5px solid #5e852c;
+    border-left: 1px solid #5e852c;
+    border-right: 1px solid #5e852c;
+    border-bottom: 1px solid #5e852c;
+    border-radius: 10px;
+}
+.template {
+    text-align: right;
+    margin-top: 14%;
+}
+
+/*--------------------------------------------------------*/
+
+input[type=radio] {
+    display: none;
+}
+
+.tabs { margin-top: 15px; }
+.tabs .content {
+    clear: both;
+    position: relative;
+}
+.tabs > label {
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+    display: block;
+    padding: 10px 10px;
+    background-color: #ecf0f1;
+    border-radius: 20px 20px 0 0;
+    height: 20px;
+    transition: 0.15s;
+}
+.tabs article {
+    position: static;
+    top: 0;
+    left: 0;
+    background-color: #ecf0f1;
+    display: none;
+    min-height: 200px;
+    border-top: 5px solid #5e852c;
+    border-left: 1px solid #5e852c;
+    border-right: 1px solid #5e852c;
+    border-bottom: 1px solid #5e852c;
+    border-radius: 0 10px 10px 10px;
+    padding: 15px;
+}
+.tabs input[id="local"]:checked ~ .content .local,
+.tabs input[id="global"]:checked ~ .content .global {
+    display: block;
+}
+.tabs > input:checked + label {
+    background-color: #5e852c;
+    color: #fefefe;
+    margin-top: 10px;
+    height: 20px;
+}
+
+#ip-adres {
+    width: 210px;
+}
+.translit-ou {
+    width: 100px;
+    margin-top: 15px;
+}
+.example {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#pne, #cpl { margin-top: 15px; }
+
+#ou0 { 
+    width: 100px;
+    margin: 5px;
+}
+
+.informer {
+    position: absolute;
+    margin: 22px 10px;
+}
+.informer a {
+    color:rgba(0, 0, 0);
+    text-decoration: none;
+    cursor: default;
+}
+
+.label-file {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+}
+.has-file {
+    color: #456d10;
+}
+
+#midnames {
+    margin-left: -290px;
+    margin-top: 15px;
+}
