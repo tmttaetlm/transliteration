@@ -19,11 +19,13 @@ $visits = $inf->count();
 //echo 'Просмотров: ' . $visits[0]['views'] . '</p>';
 ?>
 
-<div class="informer">
-    <i class="far fa-eye">
-        <a style="font: 16px Roboto;"><?php echo $visits[0]['views']?></a>
-    </i>
-    <i class="far fa-user" style="margin-left: 5px;">
-        <a style="font: 16px Roboto;"><?php echo $visits[0]['hosts']?></a>
-    </i>
+<div class="informer" style="display: flex">
+    <div style="display: flex">
+        <img src="/images/eye.png" alt="">
+        <a style="font: 16px Roboto; margin: auto 0"><?php echo $visits[0]['views']?></a>
+    </div>
+    <div style="display: flex; margin-left: 10px">
+        <img src="/images/user.png" alt="">
+        <a style="font: 16px Roboto; margin: auto 0"><?php echo $visits[0]['hosts']?></a>
+    </div>
 </div>

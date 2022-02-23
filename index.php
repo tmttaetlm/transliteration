@@ -8,7 +8,7 @@
 <head>
     <title>NIS Transliterating</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
     <?php include __DIR__.'/сounter/count.php'; ?>
 </head>
 <body>
@@ -66,7 +66,7 @@
                             <form id="file-form" enctype="multipart/form-data" action="transliteration.php" method="POST" style="width: 60%;">
                                 <input type="file" id="file-select" name="userfile" style="display: none">
                                 <label for="file-select" id="label-file" class="label-file">
-                                    <i id="i-file" class="fa fa-upload"></i>
+                                    <img src="images/download.png" id="i-file" style="margin: -6px 0px;">
                                     <span id="span-file">Загрузить файл</span>
                                 </label>
                                 <input type="text" id="mode" name="mode" value="csv" style="display: none;">
