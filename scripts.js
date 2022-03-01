@@ -78,7 +78,7 @@ function changeHandler(obj) {
     if (obj.id == "file-select") {
         document.getElementById("span-file").innerText = document.getElementById("file-select").files[0].name;
         document.getElementById("label-file").classList.add("has-file");
-        document.getElementById("i-file").src = "fa-check";
+        document.getElementById("i-file").src = "images/check.png";
     }
 }
 
